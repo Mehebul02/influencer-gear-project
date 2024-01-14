@@ -25,19 +25,21 @@
     font-weight: 600;
 
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 41px;
-background: #E02C6D;
-color: #FFF;
-font-size: 1rem;
-font-weight: 700;
-padding: 10px 24px;
-border: none;
-margin-top: 15px;
+    background: var(--btn-primary);
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    margin-top: 15px;
 }
 
 /* header styles */
 header {
+    max-width: 1440px;
     padding: 80px 120px;
 
 }
@@ -53,6 +55,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 
 
 }
@@ -86,6 +89,7 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .banner-title {
@@ -99,40 +103,57 @@ li a {
 .banner-img {
     background-image: url("../images/Circle\ design.svg");
     width: 440px;
-    
+
 }
+
 /* Maim section Styles */
-main{
+main {
     max-width: 1440px;
 }
-.sponsors{
-   
+
+.logo {
+
     display: flex;
     justify-content: space-between;
     justify-content: center;
     gap: 60px;
-    
+
 }
+
+/* collection Styles */
+.popular-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+    color: var(--primary-color);
+}
+.popular-collection-container {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 200px;
+    /* margin-top: 120px; */
+
+    gap: 30px;
+}
+
+.collection-item {
+    width: 329px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 17px 15px;
+
+
+
+}
+
+
+.collection-item div {
+    text-align: center;
+}
+
 
 
 /* Responsive small mobile device */
-
-@media screen and (max-width:576px) {
-   
-    nav , .banner , .sponsors{
-        flex-direction: column;
-    }
-   
-    .sponsors img{
-        width: 50%;
-        padding: 10px;
-       
-    }
-    .sponsors{
-        gap: 10px;
-        align-content: center;
-    }
-}
-.hide{
-    display: none;
-}
