@@ -98,13 +98,41 @@ li a {
 
 .banner-img {
     background-image: url("../images/Circle\ design.svg");
+    width: 440px;
+    
 }
+/* Maim section Styles */
+main{
+    max-width: 1440px;
+}
+.sponsors{
+   
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
+    
+}
+
 
 /* Responsive small mobile device */
 
 @media screen and (max-width:576px) {
    
-    nav , .banner{
+    nav , .banner , .sponsors{
         flex-direction: column;
     }
+   
+    .sponsors img{
+        width: 50%;
+        padding: 10px;
+       
+    }
+    .sponsors{
+        gap: 10px;
+        align-content: center;
+    }
+}
+.hide{
+    display: none;
 }
